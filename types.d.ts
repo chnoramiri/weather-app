@@ -29,6 +29,6 @@ export interface IWEATHERDETAIL {
     temp_max: number;
     pressure: number;
     humidity: number;
-    wind: { speed: number };
   };
+  wind: { speed: number };
 }

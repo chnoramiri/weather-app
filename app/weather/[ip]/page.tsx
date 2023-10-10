@@ -1,13 +1,11 @@
 import React from "react";
 import { GETWeather, fetchWeatherIcon } from "../../api/city/route";
-import { IWEATHERDETAIL } from "../../../types";
 import Image from "next/image";
 import type { NextRequest } from "next/server.js";
 
 const Page = async (req: NextRequest) => {
   const weatherData = await GETWeather(req);
-
-  const { weather, main } = weatherData;
+  const { weather, main,wind } = weatherData;
   const weatherIconData =
     weatherData && weather && weather.length > 0 ? weather[0].icon : "";
   const icon = await fetchWeatherIcon(weatherIconData);
@@ -42,7 +40,7 @@ const Page = async (req: NextRequest) => {
               <div className="divider 	"></div>
               <div className="flex flex-row justify-between ">
                 <p>Wind</p>
-                <p>{`${main.wind?.speed} km/h`}</p>
+                <p>{`${wind.speed} km/h`}</p>
               </div>
               <div className="divider"></div>
               <div className="flex flex-row justify-between ">

@@ -63,7 +63,6 @@ export async function GETCity(request: Request) {
 }
 
 export async function GETWeather(request: Request) {
-  
   const ip = request.params?.ip || "185.156.172.142";
   if (!ip) {
     return NextResponse.json({ message: "ip is required" });
