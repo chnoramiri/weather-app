@@ -1,6 +1,6 @@
 # Weather Web App
 
-The Weather Web App is an application that leverages the OpenWeather API to provide real-time weather data for selected cities and the IP Stack API to determine the user's current location. Users can choose from a list of cities, including London, Amsterdam, Moscow, New York, and their home city (set as a default). The app displays essential weather information, including temperature, the current weather icon, weather description, pressure, wind speed, "feels like" temperature, and humidity. Additionally, users can refresh the page to update weather data in real-time.
+The Weather Web App is an application that leverages the OpenWeather API to provide real-time weather data for selected cities and the IP Stack API to determine the user's current location. Users can choose from a list of cities, including London, Amsterdam, Moscow, New York. The app displays essential weather information, including temperature, the current weather icon, weather description, pressure, wind speed, "feels like" temperature, and humidity. Additionally, users can refresh the page to update weather data in real-time.
 
 **Features:**
 
